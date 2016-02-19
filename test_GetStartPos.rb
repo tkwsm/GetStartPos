@@ -8,9 +8,9 @@ class TC_GetStartPos < MiniTest::Unit::TestCase
 
   def setup
     @speAgid        = "SPU_025302"
-    @path2speApepfa = "spur_protein.fas"
-    @path2speAscafa = "spur_scaffold.fas"
-    @path2speBscafa = "hpul_scaffold.fas"
+    @path2speApepfa = "sample_data/spur_protein.fas"
+    @path2speAscafa = "sample_data/spur_scaffold.fas"
+    @path2speBscafa = "sample_data/hpul_scaffold.fas"
     @gph = GetPosHash.new( @speAgid, @path2speApepfa, 
                            @path2speAscafa, @path2speBscafa )
   end
